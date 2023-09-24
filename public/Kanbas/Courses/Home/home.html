@@ -2,32 +2,65 @@
   <head>
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+    <link rel="stylesheet" href="../../../lib/font-awesome/css/font-awesome.css" />
   </head>
   <body>
     <div class="wd-flex-row-container wd-flex-grow-1">
-      <div>
+      <div class="wd-bg-color-black">
         <ul class="wd-kanbas-navigation">
-            <li><a href="/Kanbas/Account/Profile/index.html">Account</a></li>
-            <li class="wd-active"><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-            <li><a href="/Kanbas/Courses/Home/home.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
+          <img src="/neu.png" alt="NEU logo">
+          <li>
+            <a href="/Kanbas/Account/Profile/index.html"
+              ><i id="profile" class="fa fa-user" aria-hidden="true"></i>Account</a
+            >
+          </li>
+          <li>
+            <a href="/Kanbas/Dashboard/screen.html"
+              ><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard
+            </a>
+          </li>
+          <li class="wd-active">
+            <a href="/Kanbas/Courses/Home/home.html"
+              ><i class="fa fa-book" aria-hidden="true"></i>Courses</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Calendar</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-inbox" aria-hidden="true"></i><br/>
+              Inbox</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-history" aria-hidden="true"></i>
+              History</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-desktop" aria-hidden="true"></i>
+              Studio</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+              Commons</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><br/>
+              Help</a>
+          </li>
+        </ul>
       </div>
 
-      <div class="wd-bg-color-blue">
-        <ul>
-          <li><a href="/Kanbas/Courses/Home/home.html">Home</a></li>
+      <div>
+        <ul class="wd-course-navigation">
+          <li class="wd-active"><a href="/Kanbas/Courses/Home/home.html">Home</a></li>
           <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
           <li><a href="#">Piazza</a></li>
           <li><a href="#">Zoom Meetings</a></li>
-          <li>
-            <a href="/Kanbas/Courses/Assignments/index.html">Assignments</a>
-          </li>
+          <li><a href="/Kanbas/Courses/Assignments/index.html">Assignments</a></li>
           <li><a href="#">Quizzes</a></li>
           <li><a href="/Kanbas/Courses/Grades/grade.html">Grades</a></li>
           <li><a href="#">People</a></li>
@@ -41,10 +74,10 @@
           <li><a href="#">Collaborations</a></li>
           <li><a href="#">Syllabus</a></li>
           <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-        </ul>
+      </ul>
       </div>
 
-      <div class="wd-bg-color-yellow wd-flex-grow-1">
+      <div class="wd-flex-grow-1">
 
         <button>Collapse All</button>
         <button>View Progess</button>
@@ -120,7 +153,7 @@
           </ul>
         </ul>
       </div>
-      <div class="wd-bg-color-red">
+      <div>
         <h3>Course Status</h3>
         <button>Unpublished</button>
         <button>Published</button>

@@ -1,20 +1,80 @@
-<table width="100%" border="1">
-  <tr>
-      <td valign="top"><ul>
-        <li><a href="/Kanbas/Account/Profile/index.html">Account</a></li>
-        <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-        <li><a href="/Kanbas/Courses/Home/home.html">Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-    </ul>
-  </td>
-      <td valign="top"><ul>
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+    <link
+      rel="stylesheet"
+      href="/Kanbas/Account/Navigation/accountNavigation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../lib/font-awesome/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="../../../lib/bootstrap/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="wd-flex-row-container wd-flex-grow-1">
+      <div class="wd-bg-color-black">
+        <img src="/neu.png" alt="NEU logo" />
+        <ul class="wd-kanbas-navigation">
+          <li class="wd-active">
+            <a href="/Kanbas/Account/Profile/index.html"
+              ><i id="profile" class="fa fa-user" aria-hidden="true"></i
+              >Account</a
+            >
+          </li>
+          <li>
+            <a href="/Kanbas/Dashboard/screen.html"
+              ><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="/Kanbas/Courses/Home/home.html"
+              ><i class="fa fa-book" aria-hidden="true"></i>Courses</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Calendar</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-inbox" aria-hidden="true"></i><br />
+              Inbox</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-history" aria-hidden="true"></i> History</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-desktop" aria-hidden="true"></i> Studio</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-arrow-right" aria-hidden="true"></i> Commons</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-question-circle" aria-hidden="true"></i><br />
+              Help</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="wd-account-navigation">
           <li><a href="#">Notification</a></li>
-          <li><a href="/Kanbas/Account/Profile/index.html">Profile</a></li>
+          <li class="wd-active">
+            <a href="/Kanbas/Courses/Modules/screen.html">Profile</a>
+          </li>
           <li><a href="#">Files</a></li>
           <li><a href="#">Settings</a></li>
           <li><a href="#">Settings</a></li>
@@ -23,23 +83,27 @@
           <li><a href="#">The Hub</a></li>
           <li><a href="#">Quickly course tools</a></li>
           <li><a href="#">Global announcement</a></li>
-    </ul></td>
-      <td valign="top"><h5>Jose Annunziato's Profile</h5>
+        </ul>
+      </div>
+
+      <div class="wd-flex-grow-1">
+        <h5>Xinyao's Profile</h5>
         <hr />
-        
-        <span style="font-size: 20;">Jose Annunziato</span>
+
+        <span style="font-size: 20">Xinyao Chen</span>
         <form action="/Kanbas/Account/Profile/EditProfile/edit.html">
           <button>Edit Profile</button>
         </form>
         <h3>Contact</h3>
-        <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+        <p>
+          No registered services, you can add some on the
+          <a href="#">settings</a> page.
+        </p>
         <h3>Biography</h3>
         <p>Faculty, Software Engineer, AI, Space and renewables enthusiast.</p>
         <h3>Links</h3>
-        <a href="#">Youtube </a></td>
-  </tr>
-
-
-
-
-
+        <a href="#">Youtube </a>
+      </div>
+    </div>
+  </body>
+</html>
