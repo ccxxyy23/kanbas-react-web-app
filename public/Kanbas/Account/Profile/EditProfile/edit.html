@@ -1,68 +1,192 @@
-<table width="100%">
-  <tr>
-      <td valign="top"><ul>
-        <li><a href="/Kanbas/Account/Profile/index.html">Account</a></li>
-        <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-        <li><a href="/Kanbas/Courses/Home/home.html">Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-    </ul>
-  </td>
-      <td valign="top"><ul>
-        <li><a href="#">Notification</a></li>
-        <li><a href="/Kanbas/Account/Profile/index.html">Profile</a></li>
-        <li><a href="#">Files</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">ePortfolios</a></li>
-        <li><a href="#">Shared content</a></li>
-        <li><a href="#">The Hub</a></li>
-        <li><a href="#">Quickly course tools</a></li>
-        <li><a href="#">Global announcement</a></li>
-  </ul</td>
-      <td valign="top">
-        <h1>Jose Annunziato</h1>
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Account/Profile/index.css" />
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+    <link
+      rel="stylesheet"
+      href="/Kanbas/Account/Navigation/accountNavigation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../../lib/font-awesome/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="../../../../lib/bootstrap/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="wd-flex-row-container wd-flex-grow-1">
+      <div class="wd-bg-color-black">
+        <img src="/neu.png" alt="NEU logo" />
+        <ul class="wd-kanbas-navigation">
+          <li class="wd-active">
+            <a href="/Kanbas/Account/Profile/index.html"
+              ><i id="profile" class="fa fa-user" aria-hidden="true"></i
+              >Account</a
+            >
+          </li>
+          <li>
+            <a href="/Kanbas/Dashboard/screen.html"
+              ><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="/Kanbas/Courses/Home/home.html"
+              ><i class="fa fa-book" aria-hidden="true"></i>Courses</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Calendar</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-inbox" aria-hidden="true"></i><br />
+              Inbox</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-history" aria-hidden="true"></i> History</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-desktop" aria-hidden="true"></i> Studio</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-arrow-right" aria-hidden="true"></i> Commons</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-question-circle" aria-hidden="true"></i><br />
+              Help</a
+            >
+          </li>
+        </ul>
+      </div>
 
-<form action="/Kanbas/Account/Profile/index.html">
-  Name: *<input name="fullName" type="text" value="Alice Wonderland" />
-  Pronouns:<select><option>None</option></select><br />
-  Title:<input/><br />
-  <h3>Contact</h3>
-  <p>No registered services, you can add some on the <a href="#">settings</a> pages.</p>
-  <h3>Contact</h3>
-  <p>No registered services, you can add some on the <a href="#">settings</a> pages.</p>
-  <h3>Biography:</h3>
-  <p>Falculty, software enigneer, AI, soace and renewables enthusiast.</p>
-  <textarea name="biography" cols="50">Falculty, software enigneer, AI, soace and renewables enthusiast.
-  </textarea
-  >
-  <br />
-  <h3>Links</h3>
-  <ul>
-    <li><a href="#">Youtube Links to an external site</a></li>
-  </ul>
-  <table  width="50%">
-    <thead>
-      <th>Title</th>
-      <th>URL</th>
-    </thead>
-    <tbody>
-      <td><input value="Youtube"></td>
-      <td><input value="http://www.youtube.com"><a href="#">Remove</a></td>
-    </tbody>
-  </table>
-  <button>Add another link</button><br />
-  <button>Cancel</button>
-  <button>Save Profile</button><br />
-  <button>Edit Profile</button>
-  <button>Cancel Editing</button>
+      <div class="wd-flex-grow-1">
+        <i class="wd-hamburger-icon fa fa-bars" aria-hidden="true"></i>
+        <span class="wd-span">Xinyao's Profile</span>
+        <hr />
+        <ul class="wd-account-navigation">
+          <li><a href="#">Notification</a></li>
+          <li class="wd-active">
+            <a href="/Kanbas/Courses/Modules/screen.html">Profile</a>
+          </li>
+          <li><a href="#">Files</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">ePortfolios</a></li>
+          <li><a href="#">Shared content</a></li>
+          <li><a href="#">The Hub</a></li>
+          <li><a href="#">Quickly course tools</a></li>
+          <li><a href="#">Global announcement</a></li>
+        </ul>
+      </div>
 
-</form>
-      </td>
-  </tr>
+      <div class="wd-flex-grow-1">
+        <hr class="wd-hr" />
+        <i id="profile_img" class="fa fa-user-circle-o" aria-hidden="true"></i
+        ><br />
+        <form action="/Kanbas/Account/Profile/index.html">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Name: *</label
+            >
+            <input
+              type="text"
+              name="fullName"
+              class="form-control"
+              value="Xinyao Chen"
+            />
+            <label>Pronouns:</label>
+            <div class="form-floating">
+              <select
+                class="form-select form-select-sm"
+                aria-label="Small select example"
+              >
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <label for="exampleFormControlInput1" class="form-label"
+              >Title:</label
+            >
+            <input type="text" name="Title" class="form-control" />
+          </div>
+          <h3>Contact</h3>
+          <p>
+            No registered services, you can add some on the
+            <a href="#">settings</a> pages.
+          </p>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              ><h3>Biography</h3></label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea2"
+              rows="3"
+            >
+Falculty, software enigneer, AI, soace and renewables enthusiast.</textarea
+            >
+          </div>
 
+          <h3>Links</h3>
 
+          <div class="container text-center">
+            <div class="row row-cols-2">
+              <div class="col">Title</div>
+              <div class="col">URL</div>
+              <div class="col">
+                <div class="mb-3">
+                  <input type="text" class="form-control" value="YouTube" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="https://www.youtube.com/watch?v=_yx7-pYX8bc&t=2113s"
+                  />
+                </div>
+              </div>
+          </div>
+          </div>
+          <br />
+
+          <button class="btn btn-light float-start">
+          Add another link
+          </button><br/>
+
+          <hr />
+
+          <button class="btn btn-light float-end">
+            Cancel
+          </button>
+
+          <button class="btn btn-danger float-end">
+            Save file
+          </button>
+        </form>
+      </div>
+
+      <div class="wd-flex-grow-1">
+        <hr class="wd-hr" />
+        <form action="/Kanbas/Account/Profile/index.html">
+          <button class="btn btn-light float-end">
+            <i class="fa fa-pencil" aria-hidden="true"></i>Cancel Editing
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

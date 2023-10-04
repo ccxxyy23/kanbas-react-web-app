@@ -1,165 +1,406 @@
-<table width="100%" border="1">
-  <tr>
-    <td valign="top">
-      <ul>
-        <li><a href="/Kanbas/Account/Profile/index.html">Account</a></li>
-        <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-        <li><a href="/Kanbas/Courses/Home/home.html">Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Inbox</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Studio</a></li>
-        <li><a href="#">Commons</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <ul>
-        <li><a href="/Kanbas/Courses/Home/home.html">Home</a></li>
-        <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-        <li><a href="#">Piazza</a></li>
-        <li><a href="#">Zoom Meetings</a></li>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/index.html">Assignments</a>
-        </li>
-        <li><a href="#">Quizzes</a></li>
-        <li><a href="/Kanbas/Courses/Grades/grade.html">Grades</a></li>
-        <li><a href="#">People</a></li>
-        <li><a href="#">Panpoto Video</a></li>
-        <li><a href="#">Discussions</a></li>
-        <li><a href="#">Announcements</a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#">Files</a></li>
-        <li><a href="#">Rubics</a></li>
-        <li><a href="#">Outcomes</a></li>
-        <li><a href="#">Collaborations</a></li>
-        <li><a href="#">Syllabus</a></li>
-        <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-      </ul>
-    </td>
-    <td valign="top">
-      <input placeholder="Search for assignment" />
-      <button>Group</button>
-      <button>Assignment</button>
-      <select>
-        <option>Edit Assignment Dates</option>
-        <option>Update Assignment Dates</option>
-      </select>
-      <hr />
-      <span style="font-size: 22px; font-weight: bold"
-        >ASSIGNMENTS 40% of Total</span
-      ><nobr />
-      <select>
-        <option>Edit</option>
-        <option>Speeder Grader</option>
-        <option>Duplicat</option>
-        <option>Delete</option>
-        <option>Move To...</option>
-        <option>Send To...</option>
-        <option>Copy To...</option>
-        <option>Share to Commons</option>
-      </select>
-      <ul>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">A1 - ENV + HTML <br />Multiple Modules</a> | Not available
-          yet
-        </li>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">A2 - CSS + BOOTSTRAP <br />Multiple Modules</a> | Not
-          available yet
-        </li>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">A3 - JS + REACT <br />Multiple Modules</a> | Not available
-          yet
-        </li>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">A4 - STATE + REDUX <br />Multiple Modules</a> | Not
-          available yet
-        </li>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">A5 - NODE + SESSION <br />Multiple Modules</a> | Not
-          available
-        </li>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">A6 - MONGO + MONGOOSE <br />Multiple Modules</a> | Not
-          available
-        </li>
-      </ul>
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="../../../lib/font-awesome/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../lib/bootstrap/bootstrap.bundle.min.js"
+    />
+    <link rel="stylesheet" href="../../../lib/bootstrap/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container-fiuled">
+      <div class="row align-items-center">
+        <div class="row">
+          <div class="col-1 d-sm-none d-md-block">
+            <div class="wd-bg-color-black">
+              <ul class="wd-kanbas-navigation">
+                <img src="/neu.png" alt="NEU logo" />
+                <li>
+                  <a href="/Kanbas/Account/Profile/index.html"
+                    ><i id="profile" class="fa fa-user" aria-hidden="true"></i
+                    >Account</a
+                  >
+                </li>
+                <li class="wd-active">
+                  <a href="/Kanbas/Dashboard/screen.html"
+                    ><i class="fa fa-tachometer" aria-hidden="true"></i
+                    >Dashboard
+                  </a>
+                </li>
+                <li>
+                  <a href="/Kanbas/Courses/Home/home.html"
+                    ><i class="fa fa-book" aria-hidden="true"></i>Courses</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    Calendar</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-inbox" aria-hidden="true"></i><br />
+                    Inbox</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-history" aria-hidden="true"></i> History</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-desktop" aria-hidden="true"></i> Studio</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    Commons</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-question-circle" aria-hidden="true"></i
+                    ><br />
+                    Help</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-11 wd-flex-grow-1">
+            <div class="wd-student-view">
+              <button type="button" class="btn btn-light float-end">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                Student View
+              </button>
+            </div>
 
-      <span style="font-size: 22px; font-weight: bold"
-        >QUIZZES 10% of Total</span
-      >
-      <select>
-        <option>Edit</option>
-        <option>Speeder Grader</option>
-        <option>Duplicat</option>
-        <option>Delete</option>
-        <option>Move To...</option>
-        <option>Send To...</option>
-        <option>Copy To...</option>
-        <option>Share to Commons</option>
-      </select>
-      <ul>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">Q1 - HTML <br />Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">Q2 - CSS <br />Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">Q3 - JS, ES6 <br />Multiple Modules</a> | Not available
-          yet
-        </li>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">Q4 - NODE <br />Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">Q5 - MANGO <br />Multiple Modules</a> | Not available
-        </li>
-      </ul>
+            <nav
+              class="d-none d-sm-block"
+              style="--bs-breadcrumb-divider: '>'"
+              aria-label="breadcrumb"
+            >
+              <ol class="breadcrumb">
+                <a href="/Kanbas/Account/Profile/index.html"
+                  ><i
+                    class="wd-hamburger-icon fa fa-bars"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+                <li class="breadcrumb-item">CS4550.12631.202410</li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Assignments
+                </li>
+              </ol>
+            </nav>
+            <hr />
 
-      <span style="font-size: 22px; font-weight: bold">EXAMS 20% of Total</span>
-      <select>
-        <option>Edit</option>
-        <option>Speeder Grader</option>
-        <option>Duplicat</option>
-        <option>Delete</option>
-        <option>Move To...</option>
-        <option>Send To...</option>
-        <option>Copy To...</option>
-        <option>Share to Commons</option>
-      </select>
-      <ul>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">Midterm <br />Multiple Modules</a> | Not available yet
-        </li>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html"
-            >Final<br />
-            Multiple Modules</a
-          >
-          | Not available yet
-        </li>
-      </ul>
+            <div class="row">
+              <div class="col-1 d-sm-none d-md-block">
+                <div>
+                  <ul class="wd-course-navigation">
+                    <li>
+                      <a href="/Kanbas/Courses/Home/home.html">Home</a>
+                    </li>
+                    <li>
+                      <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                    </li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li class="wd-active">
+                      <a href="/Kanbas/Courses/Assignments/index.html"
+                        >Assignments</a
+                      >
+                    </li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li>
+                      <a href="/Kanbas/Courses/Grades/grade.html">Grades</a>
+                    </li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panpoto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li>
+                      <a href="/Kanbas/Courses/Settings/screen.html"
+                        >Settings</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-10 col-xs-12">
+                <div class="wd-flex-grow-1">
+                  <div class="row g-3 align-items-center">
+                    <div class="col-9">
+                      <input type="text" placeholder="Search for Assignment" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="btn btn-light float-end">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger float-end">
+                        +Assignment
+                      </button>
+    
+                      <button type="button" class="btn btn-light float-end">
+                        +Group
+                      </button>
+    
+                    </div>
+                  </div>
+  
+                 
+                  <br />
+                  <br />
+                  <hr />
 
-      <span style="font-size: 22px; font-weight: bold"
-        >PROJECT 30% of Total</span
-      >
-      <select>
-        <option>Edit</option>
-        <option>Speeder Grader</option>
-        <option>Duplicat</option>
-        <option>Delete</option>
-        <option>Move To...</option>
-        <option>Send To...</option>
-        <option>Copy To...</option>
-        <option>Share to Commons</option>
-      </select>
-      <ul>
-        <li>
-          <a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">Project <br />Multiple Modules</a> | Not available yet
-        </li>
-      </ul>
-    </td>
-  </tr>
-</table>
+                  <ul class="list-group">
+                    <li
+                      id="two-ellip"
+                      class="list-group-item list-group-item-secondary"
+                    >
+                      <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                      ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+
+                      <span>Assignments</span
+                      ><i
+                        class="fa fa-ellipsis-v float-end"
+                        aria-hidden="true"
+                      ></i
+                      ><i
+                        class="fa fa-plus float-end ms-2"
+                        aria-hidden="true"
+                      ></i>
+                      <p class="wd-rounded w-auto float-end">40% of Total</p>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="container text-left">
+                        <div class="row">
+                          <div class="col-1">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                            ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-1">
+                            <i
+                              class="fa fa-pencil-square-o"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div class="col-9">
+                            <span><a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">A1 SETUP</a></span>
+                            <p>
+                              Week2 - SETUP -Week starting on Monday September
+                              5th Module | <br />
+                              Due Sep 18, 2022 at 11:59pm | 100 pts
+                            </p>
+                          </div>
+                          <div class="col-1 float-end">
+                            <i
+                              class="fa fa-ellipsis-v float-end"
+                              aria-hidden="true"
+                            ></i
+                            ><i
+                              class="fa fa-check-circle float-end ws-2"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="container text-left">
+                        <div class="row">
+                          <div class="col-1">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                            ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-1">
+                            <i
+                              class="fa fa-pencil-square-o"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div class="col-9">
+                            <span><a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">A2 HTML</a></span>
+                            <p>
+                              Week1 - HTML -Week starting on Monday September
+                              5th Module | <br />
+                              Due Sep 18, 2022 at 11:59pm | 100 pts
+                            </p>
+                          </div>
+                          <div class="col-1 float-end">
+                            <i
+                              class="fa fa-ellipsis-v float-end"
+                              aria-hidden="true"
+                            ></i
+                            ><i
+                              class="fa fa-check-circle float-end ws-2"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="container text-left">
+                        <div class="row">
+                          <div class="col-1">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                            ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-1">
+                            <i
+                              class="fa fa-pencil-square-o"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div class="col-9">
+                            <span><a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">A3 CSS</a></span>
+                            <p>
+                              Week2 - SETUP -Week starting on Monday September
+                              5th Module | <br />
+                              Due Sep 18, 2022 at 11:59pm | 100 pts
+                            </p>
+                          </div>
+                          <div class="col-1 float-end">
+                            <i
+                              class="fa fa-ellipsis-v float-end"
+                              aria-hidden="true"
+                            ></i
+                            ><i
+                              class="fa fa-check-circle float-end ws-2"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="container text-left">
+                        <div class="row">
+                          <div class="col-1">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                            ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-1">
+                            <i
+                              class="fa fa-pencil-square-o"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div class="col-9">
+                            <span><a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">A4 BOOTSTRAOP</a></span>
+                            <p>
+                              Week3 - SETUP -Week starting on Monday September
+                              5th Module | <br />
+                              Due Sep 18, 2022 at 11:59pm | 100 pts
+                            </p>
+                          </div>
+                          <div class="col-1 float-end">
+                            <i
+                              class="fa fa-ellipsis-v float-end"
+                              aria-hidden="true"
+                            ></i
+                            ><i
+                              class="fa fa-check-circle float-end ws-2"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item">
+                      <div class="container text-left">
+                        <div class="row">
+                          <div class="col-1">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                            ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-1">
+                            <i
+                              class="fa fa-pencil-square-o"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div class="col-9">
+                            <span><a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">A5 JAVASCRIPT</a></span>
+                            <p>
+                              Week4 - JAVASCRIPT -Week starting on Monday September
+                              5th Module | <br />
+                              Due Sep 18, 2022 at 11:59pm | 100 pts
+                            </p>
+                          </div>
+                          <div class="col-1 float-end">
+                            <i
+                              class="fa fa-ellipsis-v float-end"
+                              aria-hidden="true"
+                            ></i
+                            ><i
+                              class="fa fa-check-circle float-end ws-2"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="container text-left">
+                        <div class="row">
+                          <div class="col-1">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i
+                            ><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-1">
+                            <i
+                              class="fa fa-pencil-square-o"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div class="col-9">
+                            <span><a href="/Kanbas/Courses/Assignments/AssignmentEditor/edit.html">A6 REACT</a></span>
+                            <p>
+                              Week6 - REACT -Week starting on Monday September
+                              5th Module | <br />
+                              Due Sep 18, 2022 at 11:59pm | 100 pts
+                            </p>
+                          </div>
+                          <div class="col-1 float-end">
+                            <i
+                              class="fa fa-ellipsis-v float-end"
+                              aria-hidden="true"
+                            ></i
+                            ><i
+                              class="fa fa-check-circle float-end ws-2"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -2,10 +2,10 @@
     background-color: #fff;
     list-style: none;
     padding: 0%;
-    width: 120px;
+    width: 195px;
     margin: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 25px;
+    margin-right: 20px;;
 }
 
 .wd-account-navigation li {
@@ -17,6 +17,7 @@
 }
 .wd-account-navigation li.wd-active {
     border-left: 2px solid black;
+    padding-right: 8px;
 }
 
 .wd-account-navigation li.wd-active a{
@@ -26,4 +27,10 @@
 .wd-account-navigation a{
     color: red;
     text-decoration: none;
+}
+
+.wd-kanbas-navigation li {
+    padding-bottom: 25px;
+    padding-top: 10px;
+    margin-top: 10px;
 }

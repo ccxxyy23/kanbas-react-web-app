@@ -1,0 +1,145 @@
+.col-sm-1 {
+    margin-right: 0px;
+}
+
+.fa.fa-link {
+    color: green;
+}
+
+.fa.fa-ellipsis-v {
+    margin-left:0px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 25px;
+}
+
+
+.fa.fa-plus {
+    margin: 10px;
+}
+ul.list-group {
+    border-radius: 0%;
+}
+
+
+.wd-bg-color-black {
+    width: 20px;
+}
+
+.breadcrumb li {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.breadcrumb i {
+    font-size: 20px;
+}
+
+.breadcrumb-item li{
+    color: red;
+}
+
+.fa.fa-check-circle {
+    color: green;
+    margin: 10px;
+}
+
+.wd-kanbas-navigation li {
+    padding-bottom: 25px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.wd-course-navigation li {
+    padding-bottom: 10px;
+}
+
+.list-group-item a {
+    color: black;
+    text-decoration: none;
+}
+
+#wd-course-status {
+   margin-top: 25px;
+   margin-bottom: 30px;
+}
+
+#special-icon {
+    color:white;
+    margin: 0;
+}
+
+
+.wd-todo {
+    color:red;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.wd-title {
+    margin-top: 20px;
+}
+
+.wd-title a {
+    text-decoration: none;
+    color: red;
+}
+
+.body {
+    width:1350px
+}
+
+.wd-coming a {
+    text-decoration: none;
+    color: red;
+}
+
+.btn.btn-light.float-end.wd-button {
+    margin-top: 10px;
+}
+
+
+
+.wd-flex-grow-1 .list-group .list-group-item {
+    border-left: 4px solid green
+}
+
+.wd-flex-grow-1 .list-group .list-group-item.list-group-item-secondary {
+    border-left: 1px solid #C0C0C0
+}
+
+.form-control {
+    width: 20px;
+}
+
+span {
+    font-size: 25px;
+    font-weight: 2em;
+}
+
+.wd-rounded {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.list-group .col-1 {
+    margin-top: 35px;
+    font-size: 2em;
+    padding-right: 5px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.list-group .col-1 {
+    margin-top: 35px;
+    font-size: 25px;
+    margin-right: 0;
+}
+
+.fa.fa-pencil-square-o {
+    color: green;
+    margin-top: 7px;
+}
+
+

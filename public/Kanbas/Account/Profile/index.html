@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
     <link
       rel="stylesheet"
@@ -69,14 +70,16 @@
         </ul>
       </div>
 
-      <div>
+      <div class="wd-flex-grow-1">
+        <i class="wd-hamburger-icon fa fa-bars" aria-hidden="true"></i>
+        <span class="wd-span">Xinyao's Profile</span>
+        <hr />
         <ul class="wd-account-navigation">
           <li><a href="#">Notification</a></li>
           <li class="wd-active">
-            <a href="/Kanbas/Courses/Modules/screen.html">Profile</a>
+            <a href="/Kanbas/Account/Profile/index.html">Profile</a>
           </li>
           <li><a href="#">Files</a></li>
-          <li><a href="#">Settings</a></li>
           <li><a href="#">Settings</a></li>
           <li><a href="#">ePortfolios</a></li>
           <li><a href="#">Shared content</a></li>
@@ -87,22 +90,30 @@
       </div>
 
       <div class="wd-flex-grow-1">
-        <h5>Xinyao's Profile</h5>
-        <hr />
-
-        <span style="font-size: 20">Xinyao Chen</span>
-        <form action="/Kanbas/Account/Profile/EditProfile/edit.html">
-          <button>Edit Profile</button>
-        </form>
-        <h3>Contact</h3>
+        <hr class="wd-hr" />
+        <i id="profile_img" class="fa fa-user-circle-o" aria-hidden="true"></i
+        ><br />
+        <h3>Xinyao Chen</h3>
+        <h4>Contact</h4>
         <p>
           No registered services, you can add some on the
           <a href="#">settings</a> page.
         </p>
-        <h3>Biography</h3>
+        <h4>Biography</h4>
         <p>Faculty, Software Engineer, AI, Space and renewables enthusiast.</p>
-        <h3>Links</h3>
-        <a href="#">Youtube </a>
+        <h4>Links</h4>
+        <a href="https://www.youtube.com/watch?v=9XsRrm-VKj4"
+          ><i class="fa fa-link" aria-hidden="true"></i>Youtube
+        </a>
+      </div>
+
+      <div class="wd-flex-grow-1">
+        <hr class="wd-hr" />
+        <form action="/Kanbas/Account/Profile/EditProfile/edit.html">
+          <button class="btn btn-light float-end">
+            <i class="fa fa-pencil" aria-hidden="true"></i>Edit Profile
+          </button>
+        </form>
       </div>
     </div>
   </body>
