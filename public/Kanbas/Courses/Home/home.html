@@ -18,7 +18,7 @@
     <div class="container-fiuled">
       <div class="row align-items-center">
         <div class="row">
-          <div class="col-1 d-sm-none d-md-block">
+          <div class="col-1 d-none d-md-block">
             <div class="wd-bg-color-black">
               <ul class="wd-kanbas-navigation">
                 <img src="/neu.png" alt="NEU logo" />
@@ -78,9 +78,12 @@
             </div>
           </div>
           <div class="col-11 wd-flex-grow-1">
-            
+            <div>
+              <a class="d-none d-sm-block d-xs-block" href="/Kanbas/Courses/Home/courseNav.html"><i class="fa fa-caret-down float-end text-black m-3" aria-hidden="true"></i></a>
+             
+            </div>
             <div class="wd-student-view">              
-              <button type="button" class="btn btn-light float-end">
+              <button type="button" class="btn btn-light float-end m-3">
               <i class="fa fa-eye" aria-hidden="true"></i>
               Student View
             </button></div>
@@ -91,7 +94,7 @@
               aria-label="breadcrumb"
             >
               <ol class="breadcrumb">
-                <a href="/Kanbas/Account/Profile/index.html"
+                <a href="/Kanbas/Courses/Home/kanbasNav.html"
                   ><i
                     class="wd-hamburger-icon fa fa-bars"
                     aria-hidden="true"
@@ -104,7 +107,7 @@
             <hr />
 
             <div class="row">
-              <div class="col-1 d-sm-none d-md-block">
+              <div class="col col-lg-2 col-md-2 d-none d-md-block">
                 <div>
                   <ul class="wd-course-navigation">
                     <li class="wd-active">
@@ -142,7 +145,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-9">
+              <div class="col col-lg-8 col-md-10 col-sm-12">
                 <div class="wd-flex-grow-1">
                   <button type="button" class="btn btn-light float-end">
                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
@@ -161,7 +164,7 @@
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
-                      ><i class="fa fa-check-circle" aria-hidden="true"></i>
+                      ><i class="fa fa-check-circle special-icon" aria-hidden="true"></i>
                       Publish All
                     </a>
                     <ul class="dropdown-menu">
@@ -431,7 +434,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-2 d-md-none d-sm-none d-xs-none d-lg-block">
+              <div class="col col-lg-2 d-lg-block d-none">
                 <div>
                   <h3>Course Status</h3>
                   <button class="btn btn-light"><i class="fa fa-ban" aria-hidden="true"></i>Unpublished</button>

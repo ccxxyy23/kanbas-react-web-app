@@ -48,6 +48,14 @@ ul.list-group {
     padding-bottom: 25px;
     padding-top: 10px;
     margin-top: 10px;
+    width: 80;
+}
+
+.wd-kanbas-navigation{
+    padding-bottom: 25px;
+    padding-top: 10px;
+    margin-top: 10px;
+    width: 80;
 }
 
 .wd-course-navigation li {
@@ -100,9 +108,6 @@ ul.list-group {
 
 
 
-.wd-flex-grow-1 .list-group .list-group-item {
-    border-left: 4px solid green
-}
 
 .wd-flex-grow-1 .list-group .list-group-item.list-group-item-secondary {
     border-left: 1px solid #C0C0C0
@@ -113,8 +118,7 @@ ul.list-group {
 }
 
 span {
-    font-size: 25px;
-    font-weight: 2em;
+    font-weight: bold;
 }
 
 .wd-rounded {
@@ -147,3 +151,41 @@ span {
 .wd-kanbas-navigation li {
     margin-right: 0;
 }
+
+
+
+.p-3.name {
+    font-weight: bold;
+}
+
+.nav-item .nav-link {
+    color: red;
+}
+
+.col-2.m-2 {
+    font-weight: bold;
+}
+
+.container.text-left {
+    margin-left: 0;
+}
+
+.col-9.m-1.red {
+    color: red;
+}
+
+.input-group.mb-3 .form-control {
+    width: 100;
+}
+
+.fa.fa-question-circle-o.m-2 {
+    color: red;
+    font-size: 20;
+}
+
+.wd-option {
+    color:red
+}
+
+
+

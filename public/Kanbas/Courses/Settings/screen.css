@@ -10,6 +10,7 @@
     margin-left:0px;
     margin-right: 10px;
     margin-top: 10px;
+    height: 25px;
 }
 
 
@@ -47,6 +48,7 @@ ul.list-group {
     padding-bottom: 25px;
     padding-top: 10px;
     margin-top: 10px;
+    margin-left: 0;
 }
 
 .wd-course-navigation li {
@@ -54,7 +56,7 @@ ul.list-group {
 }
 
 .list-group-item a {
-    color: red;
+    color: black;
     text-decoration: none;
 }
 
@@ -84,7 +86,9 @@ ul.list-group {
     color: red;
 }
 
-
+.body {
+    width:1350px
+}
 
 .wd-coming a {
     text-decoration: none;
@@ -101,20 +105,82 @@ ul.list-group {
     border-left: 4px solid green
 }
 
-
-.list-group.wd-course-status button {
-    margin-bottom: 5px;
-    border: 1px black;
-    text-align: left;
-}
-
 .wd-flex-grow-1 .list-group .list-group-item.list-group-item-secondary {
     border-left: 1px solid #C0C0C0
 }
 
-.fa.fa-check-circle.special-icon {
-    margin: 0;
+.form-control {
+    width: 20px;
 }
+
+
+
+.wd-rounded {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.list-group .col-1 {
+    margin-top: 35px;
+    font-size: 2em;
+    padding-right: 5px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.list-group .col-1 {
+    margin-top: 35px;
+    font-size: 25px;
+    margin-right: 0;
+}
+
+.fa.fa-pencil-square-o {
+    color: green;
+    margin-top: 7px;
+}
+
+
+
+
+
+
+
+.p-3.name {
+    font-weight: bold;
+}
+
+.nav-item .nav-link {
+    color: red;
+}
+
+.col-2.m-2 {
+    font-weight: bold;
+}
+
+.container.text-left {
+    margin-left: 0;
+}
+
+.col-9.m-1.red {
+    color: red;
+}
+
+.input-group.mb-3 .form-control {
+    width: 100;
+}
+
+.fa.fa-question-circle-o.m-2 {
+    color: red;
+    font-size: 20;
+}
+
+.wd-option {
+    color:red
+}
+
+
+
 
 
 
