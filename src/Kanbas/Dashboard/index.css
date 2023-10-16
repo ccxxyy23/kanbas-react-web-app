@@ -1,0 +1,64 @@
+/* Bootstrap Overrides */
+
+/** Navbar **/
+
+.container-fluid.wd-fixed-top-margin {
+  width: 1300px;
+}
+
+.row.row-cols-1.row-cols-md-3.g-4 {
+  margin-left: 20px;
+}
+
+.card.h-100 {
+  width: 270px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-left: 30px;
+}
+
+img {
+  margin-top: 0px;
+}
+
+.container-fluid.wd-fixed-top-margin {
+  margin-left: 25px;
+}
+
+.wd-left-margin {
+  margin-left: 40px;
+}
+
+/** Kanbas Navigation **/
+
+.wd-kanbas-navigation.list-group {
+  border-radius: 0;
+}
+
+.wd-kanbas-navigation .list-group-item {
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+/** Course Navigation **/
+
+.wd-course-navigation.list-group {
+  border-radius: 0;
+}
+
+.wd-course-navigation .list-group-item {
+  color: red;
+  background-color: var(--bs-list-group-bg);
+  border: none;
+}
+
+.wd-course-navigation .list-group-item.active {
+  color: black;
+  background-color: white;
+  border-color: white;
+  border-left: 2px solid black;
+}
