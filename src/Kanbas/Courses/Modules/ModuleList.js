@@ -2,6 +2,9 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import { PiDotsThreeOutlineVerticalFill } from "react-icons/pi";
+import { FcOk } from "react-icons/fc";
+import { AiOutlinePlus } from "react-icons/ai";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 function ModuleList() {
   const { courseId } = useParams();
@@ -17,9 +20,18 @@ function ModuleList() {
                 <PiDotsThreeOutlineVerticalFill />
                 <PiDotsThreeOutlineVerticalFill />
               </div>
-              <div class="col col-11">
+              <div class="col col-8">
                 <h3>{module.name}</h3>
                 <p>{module.description}</p>
+              </div>
+              <div class="col col-1">
+                <FcOk />
+              </div>
+              <div class="col col-1">
+                <AiOutlinePlus />
+              </div>
+              <div class="col col-1">
+                <BsThreeDotsVertical />
               </div>
             </div>
           </div>

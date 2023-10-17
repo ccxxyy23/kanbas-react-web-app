@@ -1,0 +1,25 @@
+.wd-assginment .list-group-item:first-child,
+.wd-assginment .list-group-item:last-child {
+  border-radius: 0%;
+}
+
+.wd-first-line {
+  border-left: 1 em green;
+}
+
+.wd-assginment .list-group-item:first-child {
+  background-color: gainsboro;
+}
+
+.wd-assginment .list-group-item {
+  border-left: 4px solid green;
+}
+
+.wd-assginment .list-group-item:first-child {
+  border-left: 2px black;
+}
+
+span {
+  font-size: 1.5em;
+  font-weight: bold;
+}

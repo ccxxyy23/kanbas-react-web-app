@@ -5,7 +5,8 @@ import db from "../../Database";
 function AssignmentEditor() {
   const { assignmentId } = useParams();
   const assignment = db.assignments.find(
-    (assignment) => assignment._id === assignmentId);
+    (assignment) => assignment._id === assignmentId
+  );
 
   const { courseId } = useParams();
   const navigate = useNavigate();
@@ -15,24 +16,26 @@ function AssignmentEditor() {
   };
   return (
     <div>
+      <br />
+      <br />
       <h2>Assignment Name</h2>
-      <input value={assignment.title}
-             className="form-control mb-2" />
-      <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-            className="btn btn-danger">
-        Cancel
-      </Link>
+      <input value={assignment.title} className="form-control mb-2" />
       {/* <Link onClick={handleSave}
             to={`/Kanbas/Courses/${courseId}/Assignments`}
             className="btn btn-success me-2">
         Save
       </Link> */}
-      <button onClick={handleSave} className="btn btn-success me-2">
+      <button onClick={handleSave} className="btn btn-light me-2 float-end">
         Save
       </button>
+      <Link
+        to={`/Kanbas/Courses/${courseId}/Assignments`}
+        className="btn btn-light float-end"
+      >
+        Cancel
+      </Link>
     </div>
   );
 }
-
 
 export default AssignmentEditor;
