@@ -1,0 +1,16 @@
+.wd-red {
+  color: red;
+  padding-left: 12px;
+}
+
+.wd-bold {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn.btn-secondary.dropdown-toggle {
+  background: white;
+  color: grey;
+  border-radius: 0%;
+  width: 200px;
+}
