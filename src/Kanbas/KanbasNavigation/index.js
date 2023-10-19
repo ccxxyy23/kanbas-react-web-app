@@ -3,15 +3,35 @@ import { BiUserCircle } from "react-icons/bi";
 import { RiDashboard3Fill } from "react-icons/ri";
 import { FaBook } from "react-icons/fa";
 import { BsFillCalendar2WeekFill } from "react-icons/bs";
+import { FaInbox } from "react-icons/fa";
+import { FaHistory } from "react-icons/fa";
+import { FaComputer } from "react-icons/fa6";
+import { FaSignOutAlt } from "react-icons/fa";
+import { FiHelpCircle } from "react-icons/fi";
 import "./index.css";
 function KanbasNavigation() {
-  const links = ["Account", "Dashboard", "Courses", "Calendar"];
+  const links = [
+    "Account",
+    "Dashboard",
+    "Courses",
+    "Calendar",
+    "Inbox",
+    "History",
+    "Studio",
+    "Commons",
+    "Help",
+  ];
 
   const linkToIconMap = {
     Account: <BiUserCircle className="wd-icon" />,
     Dashboard: <RiDashboard3Fill className="wd-icon" />,
     Courses: <FaBook className="wd-icon" />,
     Calendar: <BsFillCalendar2WeekFill className="wd-icon" />,
+    Inbox: <FaInbox className="wd-icon" />,
+    History: <FaHistory className="wd-icon" />,
+    Studio: <FaComputer className="wd-icon" />,
+    Commons: <FaSignOutAlt className="wd-icon" />,
+    Help: <FiHelpCircle className="wd-icon" />,
   };
 
   const { pathname } = useLocation();
