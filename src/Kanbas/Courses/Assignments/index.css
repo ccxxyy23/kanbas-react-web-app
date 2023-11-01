@@ -23,3 +23,8 @@ span {
   font-size: 1.5em;
   font-weight: bold;
 }
+
+#wd-link {
+  color: black;
+  text-decoration: none;
+}

@@ -9,9 +9,7 @@ import {
 } from "./assignmentsReducer";
 import db from "../../Database";
 
-function AssignmentEditor() {
-  const { assignmentId } = useParams();
-
+function AssignmentInit() {
   const assignments = useSelector(
     (state) => state.assignmentsReducer.assignments
   );
@@ -20,16 +18,13 @@ function AssignmentEditor() {
   );
   const dispatch = useDispatch();
 
-  let curAssignment = assignments.find(
-    (assignment) => assignment._id === assignmentId
-  );
-
   const { courseId } = useParams();
   const navigate = useNavigate();
   const handleSave = () => {
     console.log("Actually saving assignment TBD in later assignments");
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
+  let curAssignment = assignment;
   return (
     <div>
       <br />
@@ -92,7 +87,7 @@ function AssignmentEditor() {
 
       <button
         onClick={() => {
-          dispatch(updateAssignment(curAssignment));
+          dispatch(addAssignment({ ...curAssignment, course: courseId }));
           handleSave();
         }}
         className="btn btn-light me-2 float-end"
@@ -109,4 +104,4 @@ function AssignmentEditor() {
   );
 }
 
-export default AssignmentEditor;
+export default AssignmentInit;

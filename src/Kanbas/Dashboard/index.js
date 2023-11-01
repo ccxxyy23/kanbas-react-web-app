@@ -1,12 +1,50 @@
-import db from "../Database";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
-function Dashboard() {
-  const courses = db.courses;
+import db from "../Database";
+
+function Dashboard({
+  courses,
+  course,
+  setCourse,
+  addNewCourse,
+  deleteCourse,
+  updateCourse,
+}) {
   return (
     <div>
       <h1>Dashboard</h1>
       <hr />
+      <h5>Course</h5>
+      <input
+        value={course.name}
+        className="form-control w-75"
+        onChange={(e) => setCourse({ ...course, name: e.target.value })}
+      />
+      <input
+        value={course.number}
+        className="form-control w-75"
+        onChange={(e) => setCourse({ ...course, number: e.target.value })}
+      />
+      <input
+        value={course.startDate}
+        className="form-control w-75"
+        type="date"
+        onChange={(e) => setCourse({ ...course, startDate: e.target.value })}
+      />
+      <input
+        value={course.endDate}
+        className="form-control w-75"
+        type="date"
+        onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
+      />
+      <button className="btn btn-light" onClick={addNewCourse}>
+        Add
+      </button>
+      <button className="btn btn-light" onClick={updateCourse}>
+        Update
+      </button>
+
       <h2>Published Courses ({courses.length})</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         {courses.map((course, index) => (
@@ -22,12 +60,28 @@ function Dashboard() {
                   longer.
                 </p>
 
-                <Link
-                  key={course._id}
-                  to={`/Kanbas/Courses/${course._id}`}
-                  className="btn btn-light"
-                >
-                  {course.name}
+                <Link key={course._id} to={`/Kanbas/Courses/${course._id}`}>
+                  <button className="btn btn-light">{course.name}</button>
+                  <br />
+                  <br />
+                  <button
+                    className="btn btn-light"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      deleteCourse(course._id);
+                    }}
+                  >
+                    Delete
+                  </button>
+                  <button
+                    className="btn btn-light"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      setCourse(course);
+                    }}
+                  >
+                    Edit
+                  </button>
                 </Link>
               </div>
             </div>

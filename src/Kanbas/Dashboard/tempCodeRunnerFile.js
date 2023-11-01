@@ -1,0 +1,1 @@
+/Kanbas/Courses/${course._id}

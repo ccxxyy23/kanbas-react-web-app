@@ -6,23 +6,25 @@ import {
   Navigate,
   useLocation,
 } from "react-router-dom";
-import JsonPre from "../../Labs/a3/JsonPre";
-import db from "../Database";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
+import AssignmentInit from "./Assignments/AssignmentInit";
 import Grades from "./Grades";
 import "./index.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsEyeglasses } from "react-icons/bs";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
   const { pathname } = useLocation();
-  const [empty, kanbas, courses, id, screen] = pathname.split("/");
-  const course = db.courses.find((course) => course._id === courseId);
+  const [empty, kanbas, course_name, id, screen] = pathname.split("/");
+  console.log(courses);
+  console.log(courseId);
+  console.log(typeof courseId);
+  const course = courses.find((c) => c._id === courseId);
   return (
     <div>
       <div class="row">
@@ -71,6 +73,7 @@ function Courses() {
               path="Assignments/:assignmentId"
               element={<AssignmentEditor />}
             />
+            <Route path="Assignments/Init" element={<AssignmentInit />} />
             <Route path="Grades" element={<Grades />} />
           </Routes>
         </div>
