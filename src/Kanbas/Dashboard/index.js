@@ -12,7 +12,7 @@ function Dashboard({
   updateCourse,
 }) {
   return (
-    <div>
+    <div class="container-fiuled ms-2 px-2">
       <h1>Dashboard</h1>
       <hr />
       <h5>Course</h5>
@@ -41,10 +41,11 @@ function Dashboard({
       <button className="btn btn-light" onClick={addNewCourse}>
         Add
       </button>
-      <button className="btn btn-light" onClick={updateCourse}>
+      <button className="btn btn-light my-2" onClick={updateCourse}>
         Update
       </button>
 
+      <br />
       <h2>Published Courses ({courses.length})</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         {courses.map((course, index) => (

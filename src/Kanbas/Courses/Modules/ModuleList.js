@@ -17,7 +17,7 @@ function ModuleList() {
   const dispatch = useDispatch();
 
   return (
-    <div className="container-fiuled">
+    <div className="container-fiuled ms-1">
       <div className="d-grid gap-3">
         <li className="list-group-item">
           <input
