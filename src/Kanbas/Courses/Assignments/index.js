@@ -92,8 +92,8 @@ function Assignments() {
                 <BsThreeDotsVertical className="float-end" />
                 <FcOk className="float-end" />
                 <Button
-                  variant="danger clo"
-                  className="float-end"
+                  type="button"
+                  className="float-end btn btn-outline-danger btn-light"
                   onClick={handleShow}
                 >
                   Delete
