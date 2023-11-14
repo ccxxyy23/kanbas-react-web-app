@@ -7,7 +7,7 @@ function Dashboard({
   courses,
   course,
   setCourse,
-  addNewCourse,
+  addCourse,
   deleteCourse,
   updateCourse,
 }) {
@@ -21,11 +21,7 @@ function Dashboard({
         className="form-control w-75"
         onChange={(e) => setCourse({ ...course, name: e.target.value })}
       />
-      <input
-        value={course.number}
-        className="form-control w-75"
-        onChange={(e) => setCourse({ ...course, number: e.target.value })}
-      />
+
       <input
         value={course.startDate}
         className="form-control w-75"
@@ -38,7 +34,7 @@ function Dashboard({
         type="date"
         onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
       />
-      <button className="btn btn-light" onClick={addNewCourse}>
+      <button className="btn btn-light" onClick={addCourse}>
         Add
       </button>
       <button className="btn btn-light my-2" onClick={updateCourse}>

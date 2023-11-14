@@ -1,4 +1,6 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import {
   useParams,
   Routes,
@@ -17,14 +19,21 @@ import "./index.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsEyeglasses } from "react-icons/bs";
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
+  const [course, setCourse] = useState({});
+  const URL = "http://localhost:4000/api/courses";
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`);
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   const { pathname } = useLocation();
   const [empty, kanbas, course_name, id, screen] = pathname.split("/");
-  console.log(courses);
-  console.log(courseId);
-  console.log(typeof courseId);
-  const course = courses.find((c) => c._id === courseId);
+
   return (
     <div>
       <div class="row">

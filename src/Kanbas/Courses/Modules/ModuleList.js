@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { PiDotsThreeOutlineVerticalFill } from "react-icons/pi";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -8,13 +8,37 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
+import * as client from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+  useEffect(() => {
+    client
+      .findModulesForCourse(courseId)
+      .then((modules) => dispatch(setModules(modules)));
+  }, [courseId]);
+
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+  const handleAddModule = () => {
+    client.createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
 
   return (
     <div className="container-fiuled ms-1">
@@ -40,18 +64,13 @@ function ModuleList() {
             }
           />
           <br />
-          <button
-            className="btn btn-light float-end"
-            onClick={() => {
-              dispatch(addModule({ ...module, course: courseId }));
-            }}
-          >
+          <button className="btn btn-light float-end" onClick={handleAddModule}>
             Add
           </button>
 
           <button
             className="btn btn-light float-end"
-            onClick={() => dispatch(updateModule(module))}
+            onClick={handleUpdateModule}
           >
             Update
           </button>
@@ -89,7 +108,7 @@ function ModuleList() {
                 <div class="col col-1">
                   <button
                     className="btn btn-light"
-                    onClick={() => dispatch(deleteModule(module._id))}
+                    onClick={() => handleDeleteModule(module._id)}
                   >
                     Delete
                   </button>
