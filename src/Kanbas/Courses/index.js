@@ -22,7 +22,8 @@ import { BsEyeglasses } from "react-icons/bs";
 function Courses() {
   const { courseId } = useParams();
   const [course, setCourse] = useState({});
-  const URL = "http://localhost:4000/api/courses";
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const URL = `${API_BASE}/courses`;
   const findCourseById = async (courseId) => {
     const response = await axios.get(`${URL}/${courseId}`);
     setCourse(response.data);
