@@ -8,20 +8,20 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineBook } from "react-icons/ai";
 import { FcOk } from "react-icons/fc";
 import { useSelector, useDispatch } from "react-redux";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Modal from "react-bootstrap/Modal";
 import {
   addAssignment,
   deleteAssignment,
   updateAssignment,
   setAssignment,
+  setAssignments,
 } from "./assignmentsReducer";
 import "./index.css";
-import db from "../../Database";
+import * as client from "./client";
 
 function Assignments() {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const { courseId } = useParams();
@@ -33,9 +33,18 @@ function Assignments() {
   );
   const dispatch = useDispatch();
 
-  const courseAssignments = assignments.filter(
-    (assignment) => assignment.course === courseId
-  );
+  useEffect(() => {
+    client
+      .findAssignmentsForCourse(courseId)
+      .then((assignments) => dispatch(setAssignments(assignments)));
+  }, [courseId]);
+
+  const handleDeleteAssignment = (assignmentId) => {
+    client.deleteAssignment(assignmentId).then((status) => {
+      dispatch(deleteAssignment(assignmentId));
+    });
+  };
+
   return (
     <div>
       <br />
@@ -76,7 +85,7 @@ function Assignments() {
           </div>
         </div>
         <div className="list-group-item">
-          {courseAssignments.map((assignment) => (
+          {assignments.map((assignment) => (
             <div className="row">
               <Link
                 key={assignment._id}
@@ -110,7 +119,7 @@ function Assignments() {
                     <Button
                       variant="danger"
                       onClick={() => {
-                        dispatch(deleteAssignment(assignment._id));
+                        handleDeleteAssignment(assignment._id);
                         handleClose();
                       }}
                     >

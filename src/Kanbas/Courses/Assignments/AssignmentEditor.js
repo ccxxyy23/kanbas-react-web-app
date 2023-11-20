@@ -1,17 +1,12 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  addAssignment,
-  deleteAssignment,
-  updateAssignment,
-  setAssignment,
-} from "./assignmentsReducer";
+import { addAssignment, updateAssignment } from "./assignmentsReducer";
 import "./Editor.css";
+import * as client from "./client";
 
 function AssignmentEditor() {
   const { assignmentId } = useParams();
-
   const assignments = useSelector(
     (state) => state.assignmentsReducer.assignments
   );
@@ -19,17 +14,21 @@ function AssignmentEditor() {
     (state) => state.assignmentsReducer.assignment
   );
   const dispatch = useDispatch();
-
   let curAssignment = assignments.find(
     (assignment) => assignment._id === assignmentId
   );
-
   const { courseId } = useParams();
   const navigate = useNavigate();
   const handleSave = () => {
     console.log("Actually saving assignment TBD in later assignments");
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
+
+  const handleUpdateAssginment = async () => {
+    const status = await client.updateAssignment(curAssignment);
+    dispatch(updateAssignment(curAssignment));
+  };
+
   return (
     <div className="w-75">
       <br />
@@ -121,7 +120,7 @@ function AssignmentEditor() {
       <hr />
       <button
         onClick={() => {
-          dispatch(updateAssignment(curAssignment));
+          handleUpdateAssginment();
           handleSave();
         }}
         className="btn btn-light me-2 float-end"

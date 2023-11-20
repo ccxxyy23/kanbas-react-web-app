@@ -7,7 +7,7 @@ import {
   updateAssignment,
   setAssignment,
 } from "./assignmentsReducer";
-import db from "../../Database";
+import * as client from "./client";
 
 function AssignmentInit() {
   const assignments = useSelector(
@@ -25,6 +25,12 @@ function AssignmentInit() {
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
   let curAssignment = assignment;
+
+  const handleAddAssignment = () => {
+    client.createAssignment(courseId, curAssignment).then((curAssignment) => {
+      dispatch(addAssignment(curAssignment));
+    });
+  };
   return (
     <div>
       <br />
@@ -87,7 +93,7 @@ function AssignmentInit() {
 
       <button
         onClick={() => {
-          dispatch(addAssignment({ ...curAssignment, course: courseId }));
+          handleAddAssignment();
           handleSave();
         }}
         className="btn btn-light me-2 float-end"
