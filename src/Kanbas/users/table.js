@@ -9,7 +9,7 @@ import {
 } from "react-icons/bs";
 function UserTable() {
   const [users, setUsers] = useState([]);
-  //create new user
+  //create new user,create new variable
   const [user, setUser] = useState({
     username: "",
     password: "",
